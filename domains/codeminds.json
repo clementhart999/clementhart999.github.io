@@ -1,1 +1,11 @@
-
+{
+    "description": "Codeminds",
+    "repo": "https://github.com/clementhart999/clementhart999.github.io",
+    "owner": {
+        "username": "clementhart999",
+        "email": "ultimatecoder40@gmail.com",
+    },
+    "record": {
+        "CNAME": "clementhart999.github.io"
+    }
+} 
