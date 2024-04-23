@@ -21,8 +21,8 @@ body {
 nav {
   font-family: var(--default-font);
   position: fixed;
-  /* backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: calc(100% - 250px);
   border-bottom: 1px solid transparent;
 }
@@ -149,362 +149,13 @@ section {
   padding: 64px 128px 256px;
 }
 
-section.main {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("online-tutoring.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 64px;
-}
-
-section.landing {
-  padding-top: 200px;
-}
-
-section.secondary {
-  background: rgb(11,17,33);
-}
-
-.border-top {
-  border-top: 1.5px solid #293445;
-}
-
-.border-bottom {
-  border-bottom: 1.5px solid #293445
-}
-
-h1 {
-  font-size: 55px;
-}
-
-h2 {
-  font-size: 45px;
-}
-
-h3 {
-	font-size: 40px;
-}
-
-h4 {
-	font-size: 35px;
-}
-
-h5 {
-	font-size: 30px;
-}
-
-h6 {
-	font-size: 24px;
-}
-
-section.landing .slogan, section#trusted-by .slogan {
-  max-width: 900px;
-}
-
-section#feature .slogan {
-  max-width: 750px;
-}
-
-p {
-  font-family: Inter;
-  font-size: 20px;
-  color: #94a3b8;
-  line-height: 1.5;
-}
-
-p.desc {
-  max-width: 700px;
-}
-
-button {
-  font-family: Inter;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  width: fit-content;
-  padding: 9px 16px;
-  border-radius: 11px;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  background-color: rgba(11,17,33,0.85);
-  color: white;
-  border-color: #293445;
-}
-
-button:hover {
-  border-color: #5239CC;
-}
-
-button:active {
-  border-color: #795EFF;
-}
-
-.card {
-  background: rgba(11,17,33,0.8);
-  border: 1px solid #293445;
-  border-radius: 25px;
-  width: 100%;
-  height: 600px;
-}
-
-section#feature .card {
-  width: 80%;
-}
-
-.accent-purple {
-  color: #A694FF;
-  text-shadow: 0 0 25px #795EFF;
-}
-
-.accent-blue {
-  background: linear-gradient(90deg, #01A9F4, #B5E8FF);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.accent-sunset {
-  background: linear-gradient(90deg, #FACC69, #FF91A5);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.accent-green {
-  background: linear-gradient(90deg, #a8ffb5, #40a04e);
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.accent-lightpurple {
-  background: linear-gradient(90deg, #d5ccff, #8066ff);
-  -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(121, 94, 255, 0.5);
-}
-
-.shadow-blue {
-  position: absolute;
-  width: 200px;
-  height: 400px;
-  border-radius: 200px;
-  filter: blur(60px);
-  background: rgba(0, 122, 255, 0.3);
-}
-
-.shadow-sunset {
-  position: absolute;
-  width: 200px;
-  height: 400px;
-  border-radius: 200px;
-  filter: blur(60px);
-  background: linear-gradient(90deg, #FACC69, #FF91A5);
-  opacity: 0.4;
-}
-
-.shadow-green {
-  position: absolute;
-  width: 200px;
-  height: 400px;
-  border-radius: 200px;
-  filter: blur(60px);
-  background: #349442;
-  opacity: 0.4;
-}
-
 ::selection {
   background-color: rgba(99, 102, 241, 0.1);
 }
 
-.review {
-  background: rgba(11,17,33,0.7);
-  width: 65%;
-  padding: 25px;
-  border: 1px solid #293445;
-  border-top-width: 4px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.profile {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-section#reviews h6.name {
-  font-size: 20px;
-}
-
-section#reviews .review p.job {
-  color: #A694FF;
-  font-size: 15px;
-}
-
-section#reviews .review p {
-  font-size: 18px;
-}
-
-section#trusted-by .companies * {
-  height: 60px;
-}
-
-#footer p {
-  font-size: 19px;
-}
-
-a {
-  color: #c1ccdc;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5239CC;
-}
-
-section #footer h6 {
-  font-size: 20px;
-}
-
-section #footer a {
-  font-size: 17px;
-  color: #94a3b8;
-}
-
-section #footer a:hover {
-  color: #795EFF;
-}
-
-input[type="text"], input[type="email"], input[type="password"], textarea {
-  font-family: Inter;
-  background: #0e1525;
-  font-size: 17px;
-  border: 1px solid #293445;
-  color: #a8b7cd;
-  outline: none;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
-  width: fit-content;
-}
-
-section#contact-us input[type="text"], section#contact-us input[type="email"], section#contact-us input[type="password"], section#contact-us textarea {
-  width: -webkit-fill-available;
-}
-
-input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, textarea::placeholder {
-  color: #a8b7cd;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
-  border-color: #5239CC;
-}
-
-button.secondary {
-  background: #39298A;
-  border: 1.5px solid #39298A;
-}
-
-button.secondary:hover {
-  border-color: #5239CC;
-}
-
-button.secondary:active {
-  border-color: #795EFF;
-}
-
-section #footer button {
-  font-size: 17px;
-  padding: 9px 14px;
-  border-width: 1px;
-}
-
-#footer a svg {
-  transition: 0.3s;
-}
-
-#footer a svg:hover {
-  fill: #795EFF;
-}
-
-section:last-of-type {
-  padding: 64px 72px;
-}
-
-section .flex.row.gap-64 .item {
-  background: #0e1525;
-  padding: 24px 12px;
-  border: 1px solid #293445;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-section .flex.row.gap-64 .item:hover {
-  border-color: #5239CC;
-}
-
-section .flex.row.gap-64 .item p {
-  font-size: 18px;
-}
-
-section #footer #contact input, section #footer #contact textarea {
-  width: fit-content;
-}
-
-section#contact-us input {
-  border-radius: 7px;
-}
-
-.img-card {
-  background: #0e1525;
-  width: 128px;
-  height: 128px;
-  border: 1px #293445 solid;
-  border-radius: 20px;
-}
-
-section#get-started button {
-  width: -webkit-fill-available;
-}
-
 @media (max-width: 1200px) {
-  section.main {
-    background: url("https://anchor.hecker40.repl.co/bg.jpg") no-repeat center center;
-    background-size: cover;
-  }
-  
-  h1 {
-  	font-size: 38px;
-  }
-  
-  h2 {
-  	font-size: 32px;
-  }
-  
-  h3 {
-  	font-size: 27px;
-  }
-  
-  h4 {
-  	font-size: 24px;
-  }
-  
-  h5 {
-  	font-size: 21px;
-  }
-  
-  h6, p {
-  	font-size: 18px;
-  }
-
   section {
     padding: 64px 32px 256px;
-  }
-
-  section#feature {
-    flex-direction: column;
-    gap: 64px;
-  }
-
-  section#feature .card {
-    width: 100%;
   }
 
   nav#navbar {
@@ -533,9 +184,9 @@ section#get-started button {
     position: absolute;
     padding: 64px 0px 32px;
     gap: 8px;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
     left: 0;
     border-bottom: 1px solid #293445;
     z-index: -1;
@@ -551,10 +202,6 @@ section#get-started button {
 
   section #footer {
     gap: 64px;
-  }
-
-  .shadow-blue, .shadow-sunset, .shadow-green {
-    left: 150px;
   }
 }
 
@@ -589,10 +236,6 @@ section#get-started button {
     gap: 16px;
   }
 
-  section #footer button {
-    padding: 9px 10px;
-  }
-
   #footer #contact .flex.row.gap-16 {
     gap: 20px;
   }
@@ -607,16 +250,6 @@ section#get-started button {
 
   section#contact-us div.flex.col.gap-8 div.flex.gap-8 {
     width: 100%;
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  section#trusted-by .companies {
-    flex-direction: column;
-    gap: 32px;
   }
 }
 
