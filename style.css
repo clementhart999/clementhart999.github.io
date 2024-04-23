@@ -21,20 +21,19 @@ body {
 nav {
   font-family: var(--default-font);
   position: fixed;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
   width: calc(100% - 250px);
   border-bottom: 1px solid transparent;
 }
 
 .nav-show {
-	background: rgba(11,17,33,0.85);
+  background: rgb(11,17,33);
   border-bottom: 1px solid #293445;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
 }
 
 .nav-fade {
-  background: rgba(11,17,33,0);
   border-bottom: 1px solid transparent;
   transition: 1s, border-bottom 0.25s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
 }
@@ -151,12 +150,13 @@ section {
 }
 
 section.main {
-  background: url("bg.jpg") no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("online-tutoring.jpg") no-repeat center center;
+  background-size: cover;
   padding-top: 64px;
 }
 
 section.landing {
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 section.secondary {
@@ -533,9 +533,9 @@ section#get-started button {
     position: absolute;
     padding: 64px 0px 32px;
     gap: 8px;
-		justify-content: center;
-	  align-items: center;
-	  text-align: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
     left: 0;
     border-bottom: 1px solid #293445;
     z-index: -1;
