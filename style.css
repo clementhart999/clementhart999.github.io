@@ -149,8 +149,47 @@ section {
   padding: 64px 128px 256px;
 }
 
-::selection {
-  background-color: rgba(99, 102, 241, 0.1);
+section.landing {
+  padding-top: 150px;
+}
+
+section.landing .slogan {
+  max-width: 900px;
+}
+
+p.desc {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+h4 {
+	font-size: 35px;
+}
+
+h5 {
+	font-size: 30px;
+}
+
+h6 {
+	font-size: 24px;
+}
+
+p {
+  font-family: Inter;
+  font-size: 20px;
+  color: #94a3b8;
+  line-height: 1.5;
 }
 
 @media (max-width: 1200px) {
@@ -251,6 +290,10 @@ section {
   section#contact-us div.flex.col.gap-8 div.flex.gap-8 {
     width: 100%;
   }
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.1);
 }
 
 ::-webkit-scrollbar {
