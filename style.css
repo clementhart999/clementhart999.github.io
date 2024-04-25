@@ -21,8 +21,8 @@ body {
 nav {
   font-family: var(--default-font);
   position: fixed;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
   width: calc(100% - 250px);
   border-bottom: 1px solid transparent;
 }
@@ -149,16 +149,18 @@ section {
   padding: 64px 128px 256px;
 }
 
+section.main {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("online-tutoring.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 64px;
+}
+
 section.landing {
   padding-top: 150px;
 }
 
-section.landing .slogan {
-  max-width: 900px;
-}
-
-p.desc {
-  max-width: 700px;
+section.landing * {
+  max-width: 600px;
 }
 
 h1 {
