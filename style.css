@@ -156,7 +156,7 @@ section.main {
 }
 
 section.landing {
-  padding-top: 150px;
+  padding-top: 175px;
 }
 
 section.landing * {
@@ -192,6 +192,21 @@ p {
   font-size: 20px;
   color: #94a3b8;
   line-height: 1.5;
+}
+
+button {
+  font-family: Inter;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+  padding: 9px 16px;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  background-color: #39298A;
+  color: white;
+  border-color: #293445;
 }
 
 @media (max-width: 1200px) {
