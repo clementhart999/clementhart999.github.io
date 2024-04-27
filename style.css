@@ -167,6 +167,65 @@ nav#navbar a#bar {
   row-gap: 64px;
 }
 
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+h4 {
+	font-size: 35px;
+}
+
+h5 {
+	font-size: 30px;
+}
+
+h6 {
+	font-size: 24px;
+}
+
+p {
+  font-family: Inter;
+  font-size: 20px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+button {
+  font-family: Inter;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+  padding: 9px 16px;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  background-color: #39298A;
+  color: white;
+  border-color: #293445;
+}
+
+button.secondary {
+  background: #39298A;
+  border: 1.5px solid #39298A;
+}
+
+button.secondary:hover {
+  border-color: #5239CC;
+}
+
+button.secondary:active {
+  border-color: #795EFF;
+}
+
 .card {
   background: rgba(11,17,33,0.8);
   border: 1px solid #293445;
@@ -229,65 +288,6 @@ section.feature .card {
   filter: blur(60px);
   background: #349442;
   opacity: 0.4;
-}
-
-h1 {
-  font-size: 55px;
-}
-
-h2 {
-  font-size: 45px;
-}
-
-h3 {
-	font-size: 40px;
-}
-
-h4 {
-	font-size: 35px;
-}
-
-h5 {
-	font-size: 30px;
-}
-
-h6 {
-	font-size: 24px;
-}
-
-p {
-  font-family: Inter;
-  font-size: 20px;
-  color: #94a3b8;
-  line-height: 1.5;
-}
-
-button {
-  font-family: Inter;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  width: fit-content;
-  padding: 9px 16px;
-  border-radius: 11px;
-  border: 1px solid transparent;
-  transition: 0.3s;
-  background-color: #39298A;
-  color: white;
-  border-color: #293445;
-}
-
-button.secondary {
-  background: #39298A;
-  border: 1.5px solid #39298A;
-}
-
-button.secondary:hover {
-  border-color: #5239CC;
-}
-
-button.secondary:active {
-  border-color: #795EFF;
 }
 
 @media (max-width: 1200px) {
