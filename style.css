@@ -18,6 +18,28 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: 64px 128px 256px;
+}
+
+section.main {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("online-tutoring.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 64px;
+}
+
+section.landing {
+  padding-top: 175px;
+}
+
+section.landing * {
+  max-width: 600px;
+}
+
+section.feature {
+  background: rgb(11,17,33);
+}
+
 nav {
   font-family: var(--default-font);
   position: fixed;
@@ -143,28 +165,6 @@ nav#navbar a#bar {
 
 .row-gap-64 {
   row-gap: 64px;
-}
-
-section {
-  padding: 64px 128px 256px;
-}
-
-section.main {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("online-tutoring.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 64px;
-}
-
-section.landing {
-  padding-top: 175px;
-}
-
-section.landing * {
-  max-width: 600px;
-}
-
-section.feature {
-  background: rgb(11,17,33);
 }
 
 .card {
