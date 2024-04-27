@@ -209,6 +209,19 @@ button {
   border-color: #293445;
 }
 
+button.secondary {
+  background: #39298A;
+  border: 1.5px solid #39298A;
+}
+
+button.secondary:hover {
+  border-color: #5239CC;
+}
+
+button.secondary:active {
+  border-color: #795EFF;
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 64px 32px 256px;
