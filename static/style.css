@@ -23,7 +23,7 @@ section {
 }
 
 section.main {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("online-tutoring.jpg") no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/online-tutoring.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 64px;
 }
