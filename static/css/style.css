@@ -22,22 +22,25 @@ section {
   padding: 64px 128px 256px;
 }
 
-section.main {
+section.landing {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/bg.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 64px;
-}
-
-section.landing {
-  padding-top: 175px;
+  padding-top: 180px;
 }
 
 section.landing * {
   max-width: 600px;
 }
 
-section.feature {
+section.primary {
   background: rgb(11,17,33);
+}
+
+section.primary .title {
+  color: #6f58e0;
+  text-shadow:0 0 20px #6447f6;
+  font-weight: bold;
+  overflow: visible;
 }
 
 nav {
@@ -53,6 +56,7 @@ nav {
   background: rgb(11,17,33);
   border-bottom: 1px solid #293445;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
+  box-shadow: 0 5px 32px rgb(11,17,33);
 }
 
 .nav-fade {
@@ -67,6 +71,7 @@ nav#navbar {
 nav#navbar a {
   font-size: 17px;
   color: white;
+  text-decoration: none;
 }
 
 nav#navbar button {
@@ -225,6 +230,14 @@ button:hover {
 
 button:active {
   border-color: #795EFF;
+}
+
+.border-top {
+  border-top: 1.5px solid #293445;
+}
+
+.border-bottom {
+  border-bottom: 1.5px solid #293445
 }
 
 @media (max-width: 1200px) {
