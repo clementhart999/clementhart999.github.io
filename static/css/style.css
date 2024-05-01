@@ -33,7 +33,7 @@ section.landing * {
 }
 
 section.primary {
-  background: rgb(11,17,33);
+  background: rgb(6,10,21);
 }
 
 section.primary .title {
@@ -53,10 +53,10 @@ nav {
 }
 
 .nav-show {
-  background: rgb(11,17,33);
+  background: rgb(6,10,21);
   border-bottom: 1px solid #293445;
   transition: 1s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
-  box-shadow: 0 5px 32px rgb(11,17,33);
+  box-shadow: 0 5px 32px rgb(6,10,21);
 }
 
 .nav-fade {
@@ -220,7 +220,7 @@ button {
 }
 
 button.secondary {
-  background-color: rgba(11,17,33,0.85);
+  background-color: rgb(6,10,21);
   border-color: #293445;
 }
 
