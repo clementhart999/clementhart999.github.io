@@ -1,13 +1,15 @@
 from flask import Flask, render_template
 from pymongo import MongoClient
+import os
+
+app = Flask('app')
+app.config['SECRET_KEY'] = os.getenv('CONFIG_KEY')
 
 client = MongoClient("localhost", 27017)
 
 db = client.Users
 
 print(db)
-
-app = Flask('app')
 
 @app.route('/')
 def home():
