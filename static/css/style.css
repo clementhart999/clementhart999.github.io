@@ -265,7 +265,7 @@ ion-icon {
 }
 
 .border-bottom {
-  border-bottom: 1.5px solid #293445
+  border-bottom: 1.5px solid #293445;
 }
 
 @media (max-width: 1200px) {
