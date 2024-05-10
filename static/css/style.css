@@ -57,6 +57,23 @@ section.primary .feature h6 {
   font-size: 21px;
 }
 
+section .footer h6 {
+  font-size: 20px;
+}
+
+section .footer a {
+  font-size: 17px;
+  color: #94a3b8;
+}
+
+section .footer a:hover {
+  color: #795EFF;
+}
+
+section .footer p {
+  font-size: 19px;
+}
+
 nav {
   font-family: var(--default-font);
   position: fixed;
@@ -78,28 +95,28 @@ nav {
   transition: 1s, border-bottom 0.25s, backdrop-filter 0s, -webkit-backdrop-filter 0s;
 }
 
-nav#navbar {
+nav.navbar {
   padding: 16px 128px;
 }
 
-nav#navbar a {
+nav.navbar a {
   font-size: 17px;
   color: white;
   text-decoration: none;
 }
 
-nav#navbar button {
+nav.navbar button, .footer button {
   font-size: 16.5px;
   padding: 9px 14px;
-  border-width: 1px;
+  border-width: 1px !important;
 }
 
-nav#navbar #title {
+nav.navbar #title {
   font-size: 21px;
   font-weight: bold;
 }
 
-nav#navbar a#bar {
+nav.navbar a#bar {
   cursor: pointer;
   display: none;
 }
@@ -219,7 +236,7 @@ p {
 }
 
 a {
-  color: #6f58e0;
+  color: #7c66ea;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -254,7 +271,7 @@ button:active {
 }
 
 svg.ionicon {
-  background: rgb(26, 11, 61);
+  background: rgb(26,11,61);
   color: #6447f6;
   width: 30px;
   height: 30px;
@@ -275,12 +292,12 @@ svg.ionicon {
     padding: 64px 32px 256px;
   }
 
-  nav#navbar {
+  nav.navbar {
     padding: 16px 32px;
     width: calc(100% - 64px);
   }
 
-  nav#navbar a#bar {
+  nav.navbar a#bar {
     display: block;
   }
 
@@ -313,11 +330,11 @@ svg.ionicon {
     display: none;
   }
 
-  #footer {
+  .footer {
     flex-direction: column;
   }
 
-  section #footer {
+  section .footer {
     gap: 64px;
   }
 }
@@ -333,19 +350,19 @@ svg.ionicon {
     padding: 64px 16px;
   }
 
-  #footer {
+  .footer {
     flex-direction: column;
     justify-content: center;
   	align-items: center;
   	text-align: center;
   }
 
-  #footer .flex.gap-128 {
+  .footer .flex.gap-128 {
     flex-direction: column;
     gap: 64px;
   }
 
-  #footer .flex.gap-16 {
+  .footer .flex.gap-16 {
     gap: 8px;
   }
 
