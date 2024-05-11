@@ -13,6 +13,10 @@ print(db)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+  return render_template('index.html')
+
+@app.route('/register')
+def signup():
+  return render_template('register.html')
 
 app.run(host='0.0.0.0', port=8080)
