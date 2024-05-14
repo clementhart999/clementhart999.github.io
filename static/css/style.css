@@ -23,7 +23,7 @@ section {
 }
 
 section.landing {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/bg.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/bg.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 180px;
 }
@@ -58,7 +58,7 @@ section.primary .feature h6 {
 }
 
 section.register input {
-  width: 300px;
+  max-width: 100%;
 }
 
 section.register button {
@@ -85,6 +85,10 @@ section .footer h5 {
 
 section .footer p {
   font-size: 19px;
+}
+
+section .footer button {
+  border-width: 1px;
 }
 
 nav {
@@ -306,6 +310,10 @@ input::placeholder {
 
 input:focus {
   border-color: #5239CC;
+}
+
+label[required="required"] {
+  color: rgb(255, 152, 152);
 }
 
 svg.ionicon {

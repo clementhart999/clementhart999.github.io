@@ -19,4 +19,8 @@ def home():
 def signup():
   return render_template('register.html')
 
+@app.route('/login')
+def login():
+  return render_template('login.html')
+
 app.run(host='0.0.0.0', port=8080)
