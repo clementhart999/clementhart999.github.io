@@ -57,13 +57,26 @@ section.primary .feature h6 {
   font-size: 21px;
 }
 
+section.register {
+  padding-top: 150px;
+}
+
 section.register input {
   max-width: 100%;
 }
 
-section.register button {
+section.register button, section.verify button {
   width: 100%;
   border-radius: 9px;
+}
+
+section.verify {
+  padding-top: 200px;
+}
+
+section.verify input.code {
+  font-size: 32px;
+  text-align: center;
 }
 
 section .footer h6 {

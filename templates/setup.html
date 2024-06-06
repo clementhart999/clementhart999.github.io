@@ -32,33 +32,35 @@
     </nav>
 		<section class="flex col center gap-32 primary landing register" style="padding-top:150px;">
 		  <h1>Get started</h1>
-      <div class="flex col gap-32">
-        <div class="flex col gap-16">
-					<div class="flex row gap-8">
-						<div class="flex col left gap-8">
-							<label for="first_name" required="required">First name *</label>
-							<input placeholder="John" type="email" name="first_name" required/>
-						</div>
-						<div class="flex col left gap-8">
-							<label for="last_name">Last name</label>
-							<input placeholder="Doe" type="email" name="last_name"/>
-						</div>
-				  </div>
-					<div class="flex col left gap-8">
-						<label for="age" required="required">Age *</label>
-						<input type="number" placeholder="8+" min="8" name="age" style="width:500px;" required/>
-				  </div>
-					<div class="flex col left gap-8">
-						<label for="email" required="required">Email *</label>
-						<input placeholder="example@gmail.com" type="email" name="email" style="width:500px;" required/>
-				  </div>
-					<div class="flex col left gap-8">
-						<label for="password" required="required">Password *</label>
-            <input placeholder="Password" type="password" name="password" style="width:500px;" required/>
-					</div>
+      <form method="post">
+        <div class="flex col gap-32">
+          <div class="flex col gap-16">
+            <div class="flex row gap-8">
+              <div class="flex col left gap-8">
+                <label for="first_name" required="required">First name *</label>
+                <input placeholder="John" type="text" name="first_name" required/>
+              </div>
+              <div class="flex col left gap-8">
+                <label for="last_name">Last name</label>
+                <input placeholder="Doe" type="text" name="last_name"/>
+              </div>
+            </div>
+            <div class="flex col left gap-8">
+              <label for="age" required="required">Age *</label>
+              <input type="number" placeholder="8+" min="8" name="age" style="width:500px;" required/>
+            </div>
+            <div class="flex col left gap-8">
+              <label for="email" required="required">Email *</label>
+              <input placeholder="example@gmail.com" type="email" name="email" style="width:500px;" required/>
+            </div>
+            <div class="flex col left gap-8">
+              <label for="password" required="required">Password *</label>
+              <input placeholder="Password" type="password" name="password" style="width:500px;" required/>
+            </div>
+          </div>
+          <button type="submit">Create account</button>
         </div>
-        <button>Create account</button>
-      </div>
+      </form>
 		</section>
     <section class="primary border-top">
       <div class="flex space-between left footer">
