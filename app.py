@@ -39,56 +39,52 @@ def signup():
     
   return render_template('signup.html')
 
-@app.route('/signup', methods=['GET','POST'])
-def create_acc():
-  id = request.cookies.get("id")
-  logged_in = request.cookies.get("logged_in")
+@app.route('/signup', methods=['GET', 'POST'])
+async def create_acc():
+    id = request.cookies.get("id")
+    logged_in = request.cookies.get("logged_in")
 
-  if request.method == "POST":
-    if logged_in == "true":
-      if id != None and find_id(users, id):
-        for document in list(users.find()):
-          if document["_id"] == id:
-            break
-        
-        code_1 = request.form.get("code_1")
-        code_2 = request.form.get("code_2")
-        code_3 = request.form.get("code_3")
-        code_4 = request.form.get("code_4")
-        code_5 = request.form.get("code_5")
-        code_6 = request.form.get("code_6")
+    if request.method == "POST":
+        if logged_in == "true":
+            if id is not None and await find_id(users, id):
+                document = await users.find_one({"_id": id})
 
-        if str(code_1) + str(code_2) + str(code_3) + str(code_4) + str(code_5) + str(code_6) == str(id):
-          document["verified"] == True
+                if document:
+                    code_1 = request.form.get("code_1")
+                    code_2 = request.form.get("code_2")
+                    code_3 = request.form.get("code_3")
+                    code_4 = request.form.get("code_4")
+                    code_5 = request.form.get("code_5")
+                    code_6 = request.form.get("code_6")
 
-          return "You're verified buddy"
-        
-      return render_template('verify.html', email=document["email"])
+                    if (str(code_1) + str(code_2) + str(code_3) + str(code_4) + str(code_5) + str(code_6) == str(document["verification_code"])):
+                        await users.update_one({"_id": id}, {"$set": {"verified": True}})
+                        return "You're verified buddy"
 
-    first_name = request.form.get("first_name")
-    last_name = request.form.get("last_name")
+                    return render_template('verify.html', email=document["email"])
 
-    email = request.form.get("email")
-    password = request.form.get("password")
+        first_name = request.form.get("first_name")
+        last_name = request.form.get("last_name")
+        email = request.form.get("email")
+        password = request.form.get("password")
+        age = request.form.get("age")
 
-    age = request.form.get("age")
+        document = {
+            "_id": generate_id(12),
+            "first_name": first_name,
+            "last_name": last_name,
+            "email": email,
+            "password": password,
+            "age": age,
+            "roles": None,
+            "verified": False,
+            "enrolled": [],
+            "verification_code": generate_id(6)
+        }
 
-    document = {
-      "_id": generate_id(12),
-      "first_name": first_name,
-      "last_name": last_name,
-      "email": email,
-      "password": password,
-      "age": age,
-      "roles": None,
-      "verified": False,
-      "enrolled": [],
-      "verification_code": generate_id(6)
-    }
+        await users.insert_one(document)
 
-    users.insert_one(document)
-
-    send_email("codeminds.development@gmail.com", email, "upae ddsu aslg iyue", "Verify your account", f"""Please verify your email address.
+        send_email("Verify your account", email, f"""Please verify your email address.
 
 Use the following code to confirm your email address: {document["verification_code"]}
 
@@ -98,13 +94,13 @@ This is an automated message. Please do NOT reply to this email.
 
 Thanks!""")
 
-    resp = make_response(render_template('verify.html', email=email))
-    resp.set_cookie("logged_in", "true")
-    resp.set_cookie("id", document["_id"])
+        resp = make_response(render_template('verify.html', email=email))
+        resp.set_cookie("logged_in", "true")
+        resp.set_cookie("id", document["_id"])
 
-    return resp
+        return resp
 
-  return redirect('/signup')
+    return redirect('/signup')
 
 
 @app.route('/login')
