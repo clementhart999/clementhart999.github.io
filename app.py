@@ -5,7 +5,7 @@ import os
 
 app = Flask('app')
 
-client = MongoClient("mongodb+srv://orbitron324:LpopRFvlCG1GGX3Z@database.sch14ig.mongodb.net/?retryWrites=true&w=majority&appName=database")
+client = MongoClient("mongodb+srv://clementhart999:i%W_8ewEALuiby3@cluster0.5ssivda.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 db = client.Users
 users = db.users
