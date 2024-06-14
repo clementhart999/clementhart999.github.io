@@ -88,7 +88,7 @@ def create_acc():
 
     # return "HI"
 
-    users.insert_one(document)
+    # users.insert_one(document)
     
     send_email("codeminds.development@gmail.com", email, "upae ddsu aslg iyue", "Verify your account", f"""Please verify your email address.
 
