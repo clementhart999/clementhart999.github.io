@@ -73,6 +73,9 @@ def create_acc():
 
     age = request.form.get("age")
 
+    if users.find_one({"email": email}):
+      return render_template("signup.html", error="email")
+
     document = {
       "_id": generate_id(12),
       "first_name": first_name,
@@ -86,9 +89,7 @@ def create_acc():
       "verification_code": generate_id(6)
     }
 
-    # return "HI"
-
-    # users.insert_one(document)
+    users.insert_one(document)
     
     send_email("codeminds.development@gmail.com", email, "upae ddsu aslg iyue", "Verify your account", f"""Please verify your email address.
 

@@ -52,6 +52,9 @@
             <div class="flex col left gap-8">
               <label for="email" required="required">Email *</label>
               <input placeholder="example@gmail.com" type="email" name="email" style="width:500px;" required/>
+              {% if error == "email" %}
+              <p class="alert" style="font-size:12px;">Email already taken</p>
+              {% endif %}
             </div>
             <div class="flex col left gap-8">
               <label for="password" required="required">Password *</label>

@@ -34,7 +34,7 @@
 		  <h1>Verify your account</h1>
       <form method="post">
         <div class="flex col gap-32">
-          <p>Enter the 6 digit verification code that we just sent to {{email}}.</p>
+          <p>Enter the 6 digit verification code that we just sent to {{email}}. It may be marked as spam, so check all of your folders.</p>
           <div class="flex row gap-32">
             <input type="text" maxlength="1" class="code" name="code_1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required/>
             <input type="text" maxlength="1" class="code" name="code_2" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required/>
